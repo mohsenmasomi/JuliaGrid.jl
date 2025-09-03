@@ -17,6 +17,11 @@ include("definition/internal.jl")
 include("definition/system.jl")
 include("definition/analysis.jl")
 
+######### UI Module ##########
+include("ui/ui.jl")
+using .UI: start_ui
+export start_ui
+
 ######### Utility ##########
 include("backend/utility.jl")
 include("backend/internal.jl")
